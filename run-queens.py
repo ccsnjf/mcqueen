@@ -15,7 +15,7 @@ RUN = "Y"
 y = 15
 while y >= 0:
     kit.servo[y].angle = 90
-    print("Target " + str(y) + " away...")
+    print("Target " + str(y) + " 90...")
     y = y - 1
 
 # Main loop
@@ -28,14 +28,14 @@ while RUN != "N":
         y = 15
         while y >= 0:
             kit.servo[y].angle = 0
-            print("Facing for Exposure " + str(y))
+            print("Angle 0 " + str(y))
             y = y - 1
 
         time.sleep(5)
         y = 15
         while y >= 0:
             kit.servo[y].angle = 0
-            print("Facing for Exposure " + str(y))
+            print("Angle 0 " + str(y))
             y = y - 1
 
         # Main timed routine
@@ -54,12 +54,12 @@ while RUN != "N":
 
             print(PinNumber)
 
-            kit.servo[PinNumber].angle = 0
-            print("Face.... Exposure " + str(Y))
+            kit.servo[PinNumber].angle = 90
+            print("Angle 90...." + str(Y))
             time.sleep(3)
 
-            kit.servo[PinNumber].angle = 90
-            print("Edge....")
+            kit.servo[PinNumber].angle = 0
+            print("Angle 0....")
 
             print(PinNumber)
 
@@ -69,7 +69,7 @@ while RUN != "N":
         y = 15
         while y >= 0:
             kit.servo[y].angle = 0
-            print("Facing for Exposure " + str(y))
+            print("Angle 0 " + str(y))
             y = y - 1
 
         print("End")
@@ -88,7 +88,7 @@ while RUN != "N":
         y = 15
         while y >= 0:
             kit.servo[y].angle = 0
-            print("Face....")
+            print("Angle 0....")
             y = y - 1
 
         time.sleep(3)
@@ -96,7 +96,7 @@ while RUN != "N":
         y = 15
         while y >= 0:
             kit.servo[y].angle = 90
-            print("Edge....")
+            print("Angle 90....")
             y = y - 1
 
         print("End")
